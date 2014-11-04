@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/android.genericquest"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/android.instrumentation"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/log4j-1.2.16.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/android.ported.org.eclipse.emf_v1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/org.carim.model_1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/org.carim.instantiationFramework_1.0.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

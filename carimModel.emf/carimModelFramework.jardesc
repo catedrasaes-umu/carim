@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="carimModel.emf/org.carim.model_1.0.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/carimModel.emf/carimModelFramework.jardesc" exportErrors="false" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="true">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ModTypeT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{SocialContextImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{Turn.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{SpeechInput.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{Avm.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{MobilityLevelT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{SpeechInputImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{TrialImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ContextualAppropriatenessT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ModalitySynchroni.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ModAppropT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{DateTimeTImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{UserRatingsImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{RoleT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{CooperativityImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{UserAttitude.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{carimModelPackage.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{Cooperativity.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{SystemMetacomm.java"/>
+        <file path="/carimModel.emf/plugin.xml"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{DocumentRoot.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{SpeechOutput.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{MotionInputImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{UserRatings.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{MotionInput.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{SystemTurn.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.util{carimModelAdapterFactory.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{MetacommImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{DynamicContextImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.util{carimModelValidator.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{DateTimeT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{AttitudeImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{TurnImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{UserMetacommImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{PromptTypeT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{carimModelFactoryImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ModalityChange.java"/>
+        <file path="/carimModel.emf/build.properties"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{carimModelFactory.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{EducationLevelT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{PreviousExperienceT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ModalityAppropriateness.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{LocationT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{ModalityAppropriatenessImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ParsingResultT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{DialogueStepTImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{ModalitySynchroniImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{MmiTypeT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{CommunicationContext.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{DialogueStepT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{SystemMetacommImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{DynamicContext.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{SocialContext.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ScreenOrientationT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ModalityInfo.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.util{carimModelResourceImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.util{carimModelResourceFactoryImpl.java"/>
+        <file path="/carimModel.emf/.classpath"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.util{carimModelXMLProcessor.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{DeviceContextImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{GuiInput.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{DocumentRootImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{DeviceTypeT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{GuiInputImpl.java"/>
+        <file path="/carimModel.emf/.project"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{ModalityChangeImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{McReasonT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{LocationTimeContextImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{LocationTimeContext.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{UserMetacomm.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{Metacomm.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{UserAttitudeImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{UserData.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{UserDataImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{UserTurn.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ScreenSizeT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{Task.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{PhysicalContextImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{PhysicalContext.java"/>
+        <file path="/carimModel.emf/plugin.properties"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{WirelessAccessTypeT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{Dialogue.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{CommunicationContextImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{ScreenResolutionT.java"/>
+        <file path="/carimModel.emf/pom.xml"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{SpeechOutputImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{UserTurnImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{Trial.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{SystemTurnImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{TaskImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{SocialArenaT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{TaskSuccessT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{ModalityInfoImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{Attitude.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{carimModelPackageImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{SocialCompanyT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{DialogueImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.impl{AvmImpl.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{WeatherT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{DeviceContext.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model{GenderT.java"/>
+        <javaElement handleIdentifier="=carimModel.emf/src&lt;org.carim.model.util{carimModelSwitch.java"/>
+    </selectedElements>
+</jardesc>

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="org/carimModel" elementFormDefault="qualified" targetNamespace="org/carimModel">
+
+    <complexType name="Task">
+    	<sequence>
+    		<element name="success" type="tns:task_success_t"/>
+    		<element name="reason" type="string"/>
+    		<element minOccurs="0" name="avm" type="tns:Avm"/>
+    	</sequence>
+    </complexType>
+    
+
+    <simpleType name="task_success_t">
+    	<restriction base="string">
+    		<enumeration value="SUCCEEDED"/>
+    		<enumeration value="SUC_CONSTRAINT_RELAXATION_SYSTEM"/>
+    		<enumeration value="SUC_CONSTRAINT_RELAXATION_USER"/>
+    		<enumeration value="SUC_CONSTRAINT_RELAXATION_BOTH"/>
+    		<enumeration value="SUC_NO_SOLUTION"/>
+    		<enumeration value="FAILED_SYSTEM"/>
+    		<enumeration value="FAILED_USER"/>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="Dialogue">
+    	<sequence>
+    		<element name="baseTimestamp" type="long" />
+    		<element maxOccurs="1" minOccurs="0" name="task"
+    			type="tns:Task">
+    		</element>
+    		<!-- 
+    			<sequence minOccurs="0" maxOccurs="unbounded">
+    			<element name="systemTurn" type="tns:SystemTurn" minOccurs="1" maxOccurs="1"></element>
+    			<element name="userTurn" type="tns:UserTurn" minOccurs="1" maxOccurs="1"></element>
+    			</sequence>
+    		-->
+    		<element maxOccurs="unbounded" minOccurs="0" name="step"
+    			type="tns:dialogue_step_t" />
+    	</sequence>
+    </complexType>
+
+    <complexType abstract="true" name="Turn">
+    	<sequence>
+    		<element name="feedbackDelay" type="long" />
+    		<element name="feedbackDuration" type="long" />
+    		<element name="actionDuration" type="long" />
+    		<element name="elements" type="long" />
+    		<element name="feedback" type="long" />
+    		<element name="concepts" type="long" />
+    		<element name="noise" type="long" />
+    		<element name="questions" type="long" />
+    		<element minOccurs="0" name="modality"
+    			type="tns:ModalityInfo" />
+    		<element name="context" type="tns:DynamicContext" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+
+    <complexType name="Avm"/>
+
+
+
+
+
+
+    <complexType name="ModalitySynchroni">
+    	<sequence>
+    		<element name="nlags" type="long"/>
+    		<element name="lagtime" type="long"/>
+    		<element name="nevents" type="long"/>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="ModalityChange">
+    	<sequence>
+    		<element name="origin" type="tns:role_t"/>
+    		<element name="reason" type="tns:mc_reason_t"/>
+    	</sequence>
+    </complexType>
+
+    <simpleType name="role_t">
+    	<restriction base="string">
+    		<enumeration value="SYSTEM"/>
+    		<enumeration value="USER"/>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="mc_reason_t">
+    	<restriction base="string">
+    		<enumeration value="RECOGNITION_ERROR"/>
+    		<enumeration value="ENVIRONMENT_CHANGE"/>
+    		<enumeration value="LOW_MOD_APPROPRIATENESS"/>
+    		<enumeration value="USER_DECISION"/>
+    		<enumeration value="SYSTEM_DECISION"/>
+    		<enumeration value="INTERFACE_ADAPTATION"/>
+    		<enumeration value="OTHER"/>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="ModalityAppropriateness">
+    	<sequence>
+    		<element name="appropriateness" type="tns:mod_approp_t"/>
+    	</sequence>
+    </complexType>
+    
+    <simpleType name="mod_approp_t">
+    	<restriction base="string">
+    		<enumeration value="APPROPRIATE"/>
+    		<enumeration value="PARTIALLY"/>
+    		<enumeration value="INAPPROPRIATE"/>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="ModalityInfo">
+    	<sequence>
+    		<element name="modalityType" type="tns:mod_type_t" minOccurs="1" maxOccurs="unbounded"/>
+    		<element name="mminteractionType" type="tns:mmi_type_t"/>
+    		<element minOccurs="0" name="appropriateness" type="tns:ModalityAppropriateness">
+    		</element>
+   			<element minOccurs="0" name="synchroni" type="tns:ModalitySynchroni">
+   			</element>
+   			<element minOccurs="0" name="change" type="tns:ModalityChange"/>
+    	</sequence>
+    	
+    	
+    </complexType>
+
+    <simpleType name="mod_type_t">
+    	<restriction base="string">
+    		<enumeration value="S"/>
+    		<enumeration value="V"/>
+    		<enumeration value="G"/>
+    		<enumeration value="M"/>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="mmi_type_t">
+    	<restriction base="string">
+    		<enumeration value="UNIMODAL"/>
+    		<enumeration value="EQUIVALENT"/>
+    		<enumeration value="ASSIGNED"/>
+    		<enumeration value="REDUNDANT"/>
+    		<enumeration value="COMPLEMENTARY"/>
+    	</restriction>
+    </simpleType>
+
+
+
+
+
+    <complexType name="SystemTurn">
+    	<complexContent>
+    		<extension base="tns:Turn">
+    			<sequence>
+                    <element name="metacomm" type="tns:SystemMetacomm"/>
+    					<element minOccurs="0" name="speechOutput" type="tns:SpeechOutput">
+    					</element>
+    					<element minOccurs="0" name="cooperativity" type="tns:Cooperativity"/>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+    
+    <complexType name="Cooperativity">
+    	<sequence>
+    		<element name="contextualAppropriateness" type="tns:contextual_appropriateness_t"/>
+    	</sequence>
+    </complexType>
+    
+    <simpleType name="contextual_appropriateness_t">
+    	<restriction base="string">
+    		<enumeration value="APPROPRIATE"/>
+    		<enumeration value="INAPPROPRIATE"/>
+    		<enumeration value="TOTAL_FAILURE"/>
+    		<enumeration value="INCOMPREHENSIBLE"/>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="SpeechOutput">
+    	<sequence>
+    		<element name="AN_CO" type="long"/>
+    		<element name="AN_IN" type="long"/>
+    		<element name="AN_PA" type="long"/>
+    		<element name="AN_FA" type="long"/>
+    		<element name="promptType" type="tns:prompt_type_t"/>
+    	</sequence>
+    </complexType>
+    
+
+
+    <complexType name="SystemMetacomm">
+    	<complexContent>
+    		<extension base="tns:Metacomm">
+    			<sequence>
+	    			<element name="isASRReject" type="boolean"/>
+	    			<element name="isDIVReject" type="boolean"/>
+	    			<element name="isGRReject" type="boolean"/>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+
+    <complexType abstract="true" name="Metacomm">
+    	<sequence>
+
+    		<element name="isHelp" type="boolean"/>
+    		<element name="isCorrection" type="boolean"/>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="UserMetacomm">
+    	<complexContent>
+    		<extension base="tns:Metacomm">
+    			<sequence>
+	    			<element name="isTimeOut" type="boolean"/>
+	    			<element name="isCancel" type="boolean"/>
+	    			<element name="isRestart" type="boolean"/>
+	    			<element name="isBargein" type="boolean"/>
+	    			<element name="isSuccessfulBargein" type="boolean"/>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+    
+    <complexType name="SpeechInput">
+    	<sequence>
+	    	<element name="overallWords" type="long"/>
+	    	<element name="substitutedWords" type="long"/>
+	    	<element name="deletedWords" type="long"/>
+	    	<element name="insertedWords" type="long"/>
+	    	<element name="overallSentences" type="long"/>
+	    	<element name="substitutedSentences" type="long"/>
+	    	<element name="deletedSentences" type="long"/>
+	    	<element name="insertedSentences" type="long"/>
+	    	<element name="overallConcepts" type="long"/>
+	    	<element name="substitutedConcepts" type="long"/>
+	    	<element name="deletedConcepts" type="long"/>
+	    	<element name="insertedConcepts" type="long"/>
+
+
+	    	<element name="parsingResult" type="tns:parsing_result_t"/>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="GuiInput">
+    	<sequence>
+	    	<element name="textElements" type="long"/>
+	    	<element name="navigationActions" type="long"/>
+	    	<element name="navigationMoves" type="long"/>
+	    	<element name="navigationLength" type="long"/>
+	    	<element name="exploringActions" type="long"/>
+	    	<element name="transferringActions" type="long"/>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="MotionInput">
+    	<sequence>
+	    	<element name="tiltMovements" type="long"/>
+	    	<element name="twistMovements" type="long"/>
+	    	<element name="shakeMovements" type="long"/>
+    	</sequence>
+    </complexType>
+    
+
+
+
+    <complexType name="UserTurn">
+    	<complexContent>
+    		<extension base="tns:Turn">
+    			<sequence>
+                    <element name="metacomm" type="tns:UserMetacomm"/>
+   					<element minOccurs="0" name="speechInput" type="tns:SpeechInput"/>
+   					<element minOccurs="0" name="guiInput" type="tns:GuiInput"/>
+   					<element minOccurs="0" name="motionInput" type="tns:MotionInput"/>
+                </sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+
+
+    <complexType name="dialogue_step_t">
+    	<sequence maxOccurs="1" minOccurs="1">
+    		<element maxOccurs="1" minOccurs="1" name="systemTurn" type="tns:SystemTurn"/>
+    		<element maxOccurs="1" minOccurs="1" name="userTurn" type="tns:UserTurn"/>
+    	</sequence>
+    </complexType>
+
+    <simpleType name="prompt_type_t">
+    	<restriction base="string">
+    		<enumeration value="OPEN"/>
+    		<enumeration value="HALF_OPEN"/>
+    		<enumeration value="CLOSED"/>
+    		<enumeration value="NO_QUESTION"/>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="parsing_result_t">
+    	<restriction base="string">
+    		<enumeration value="CORRECTLY_UNDERSTOOD"/>
+    		<enumeration value="PARTIALLY_UNDERSTOOD"/>
+    		<enumeration value="NOTHING_UNDERSTOOD"/>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="likert5_value">
+    	<restriction base="float">
+    		<minInclusive value="0"></minInclusive>
+    		<maxInclusive value="4"></maxInclusive>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="likert7_value">
+    	<restriction base="float">
+    		<minInclusive value="0"></minInclusive>
+    		<maxInclusive value="6"></maxInclusive>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="UserAttitude">
+    	<sequence>
+    		<element name="usefulness" type="tns:likert5_value"></element>
+    		<element name="pleasantness" type="tns:likert5_value"></element>
+    		<element name="integration" type="tns:likert5_value"></element>
+    		<element name="selfEfficacy" type="tns:likert5_value"></element>
+    		<element name="comfort" type="tns:likert5_value"></element>
+    	</sequence>
+    </complexType>
+
+
+    <complexType name="UserRatings">
+    	<sequence>
+    		<element name="practical" type="tns:likert7_value"></element>
+    		<element name="predictable" type="tns:likert7_value"></element>
+    		<element name="clearlyStructured" type="tns:likert7_value"></element>
+    		<element name="simple" type="tns:likert7_value"></element>
+    		<element name="stylish" type="tns:likert7_value"></element>
+    		<element name="premium" type="tns:likert7_value"></element>
+    		<element name="creative" type="tns:likert7_value"></element>
+    		<element name="captivating" type="tns:likert7_value"></element>
+    		<element name="beautiful" type="tns:likert7_value"></element>
+    		<element name="good" type="tns:likert7_value"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="UserData">
+    	<sequence>
+    		<element name="userRatings" type="tns:UserRatings"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    		<element name="userMood" type="tns:likert5_value"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    		<element name="userAttitude" type="tns:UserAttitude"></element>
+    		<element name="age" type="int"></element>
+    		<element name="gender" type="tns:gender_t"></element>
+    		<element name="educationLevel" type="tns:education_level_t"></element>
+    		<element name="previousExperience" type="tns:previous_experience_t"></element>
+    	</sequence>
+    </complexType>
+
+
+    <element name="Trial" type="tns:Trial">
+    	<annotation>
+    		<documentation>This is the root element</documentation>
+    	</annotation></element>
+
+    <complexType name="Trial">
+    	<sequence>
+    		<element name="description" type="string"></element>
+    		<element name="userData" type="tns:UserData"></element>
+    		<element name="dialogues" type="tns:Dialogue" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="Attitude"></complexType>
+
+    <complexType name="DynamicContext">
+    	<sequence>
+    		<element name="physicalContext" type="tns:PhysicalContext"></element>
+    		<element name="socialContext" type="tns:SocialContext"></element>
+    		<element name="locationTimeContext" type="tns:LocationTimeContext"></element>
+    		<element name="deviceContext" type="tns:DeviceContext"></element>
+    		<element name="communicationContext" type="tns:CommunicationContext"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="PhysicalContext">
+    	<sequence>
+    		<element name="temperature" type="int"></element>
+    		<element name="weather" type="tns:weather_t"></element>
+    		<element name="noise" type="tns:percentage_t"></element>
+    		<element name="light" type="tns:percentage_t"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="SocialContext">
+    	<sequence>
+    		<element name="company" type="tns:social_company_t"></element>
+    		<element name="arena" type="tns:social_arena_t"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="LocationTimeContext">
+    	<sequence>
+    		<element name="location" type="tns:location_t"></element>
+    		<element name="geo_latitude" type="double"></element>
+            <element name="geo_longitude" type="double"></element>
+            <element name="mobilityLevel" type="tns:mobility_level_t"></element>
+            <element name="time" type="tns:date_time_t"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="DeviceContext">
+    	<sequence>
+    		<element name="deviceType" type="tns:device_type_t"></element>
+    		<element name="screenSize" type="tns:screen_size_t"></element>
+    		<element name="screenResolution" type="tns:screen_resolution_t"></element>
+    		<element name="screenOrientation" type="tns:screen_orientation_t"></element>
+    		<element name="screenBrightnessLevel" type="tns:percentage_t"></element>
+    		<element name="volumeLevel" type="tns:percentage_t"></element>
+    		<element name="memoryUsage" type="tns:percentage_t"></element>
+    		<element name="cpuUsage" type="tns:percentage_t"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="CommunicationContext">
+    	<sequence>
+    		<element name="wirelessAccessType" type="tns:wireless_access_type_t"></element>
+    		<element name="accessPointName" type="string"></element>
+    		<element name="signalStrength" type="tns:percentage_t"></element>
+    		<element name="receivedDataThroughput" type="double"></element>
+    		<element name="sentDataThroughput" type="double"></element>
+    		<element name="rtt" type="int"></element>
+    		<element name="srt" type="int"></element>
+    	</sequence>
+    </complexType>
+
+    <simpleType name="weather_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="SUNNY"></enumeration>
+    		<enumeration value="CLOUDY"></enumeration>
+    		<enumeration value="WINDY"></enumeration>
+    		<enumeration value="RAINY"></enumeration>
+    		<enumeration value="SNOWY"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="gender_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="MALE"></enumeration>
+    		<enumeration value="FEMALE"></enumeration>
+    		<enumeration value="OTHER"></enumeration>
+    	</restriction>
+    </simpleType>
+
+
+    <simpleType name="education_level_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="HIGH_SCHOOL"></enumeration>
+    		<enumeration value="PROFESSIONAL"></enumeration>
+    		<enumeration value="COLLEGE"></enumeration>
+    		<enumeration value="NOT_APPLICABLE"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="previous_experience_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="LOW"></enumeration>
+    		<enumeration value="MEDIUM"></enumeration>
+    		<enumeration value="HIGH"></enumeration>
+    		<enumeration value="EXPERT"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="social_company_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="ALONE"></enumeration>
+    		<enumeration value="WITH_A_PERSON"></enumeration>
+    		<enumeration value="WITH_A_GROUP"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="social_arena_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="DOMESTIC"></enumeration>
+    		<enumeration value="WORK"></enumeration>
+    		<enumeration value="EDUCATIONAL"></enumeration>
+    		<enumeration value="LEISURE"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="location_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="HOME"></enumeration>
+    		<enumeration value="OFFICE/SCHOOL"></enumeration>
+    		<enumeration value="STREET"></enumeration>
+    		<enumeration value="OTHER_INDOOR"></enumeration>
+    		<enumeration value="OTHER_OUTDOOR"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="mobility_level_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="SITTING"></enumeration>
+    		<enumeration value="STANDING"></enumeration>
+    		<enumeration value="WALKING"></enumeration>
+    		<enumeration value="SPORTING"></enumeration>
+    		<enumeration value="DRIVING"></enumeration>
+    		<enumeration value="OTHER"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="device_type_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="LAPTOP"></enumeration>
+    		<enumeration value="TABLET"></enumeration>
+    		<enumeration value="SMARTPHONE"></enumeration>
+    		<enumeration value="MMPLAYER"></enumeration>
+    		<enumeration value="OTHER"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="screen_size_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="SMALL_let_4in"></enumeration>
+    		<enumeration value="MEDIUM_bt_4in_10in"></enumeration>
+    		<enumeration value="LARGE_get_10in"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="screen_resolution_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="SMALL_let_480x800"></enumeration>
+    		<enumeration value="MEDIUM_bt_480x800_1280x800"></enumeration>
+    		<enumeration value="LARGE_get_1280x800"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="screen_orientation_t">
+    	<restriction base="string">
+    		<enumeration value="NONE"></enumeration>
+    		<enumeration value="LANDSCAPE"></enumeration>
+    		<enumeration value="PORTRAIT"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="wireless_access_type_t">
+    	<restriction base="string">
+    		<enumeration value="NO_ACCESS"></enumeration>
+    		<enumeration value="MOBILE"></enumeration>
+    		<enumeration value="WIFI"></enumeration>
+    		<enumeration value="BLUETOOTH"></enumeration>
+    		<enumeration value="OTHER"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="percentage_t">
+    	<restriction base="int">
+    		<minInclusive value="0"></minInclusive>
+    		<maxInclusive value="100"></maxInclusive>
+    	</restriction>
+    </simpleType>
+
+
+
+
+
+    <complexType name="date_time_t">
+    	<attribute name="t_hours">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="0"></minInclusive>
+    				<maxExclusive value="24"></maxExclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	<attribute name="t_mins">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="0"></minInclusive>
+    				<maxExclusive value="60"></maxExclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	<attribute name="t_secs">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="0"></minInclusive>
+    				<maxExclusive value="60"></maxExclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	<attribute name="d_year">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="1980"></minInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	<attribute name="d_month">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="1"></minInclusive>
+    				<maxInclusive value="12"></maxInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	<attribute name="d_day">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="1"></minInclusive>
+    				<maxInclusive value="31"></maxInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    </complexType>
+</schema>

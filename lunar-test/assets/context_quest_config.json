@@ -1,0 +1,141 @@
+{
+	    "n_questions": "15",
+	    "n_total_questions": "15",
+	    "questions": [
+	    
+	    	// All Question options:
+	    	// 
+	        // {
+	        // "q_value": "value_name",            // (man) the name
+	        // "q_default": "a_value",             // (opt) the default value
+	        // "q_type": "one type from below",    // (man) how the value is extracted
+	        //           - q_type_ignore: the value will be ignored  
+	        //           - q_type_auto: the value will be extracted somehow later  
+	        //           - q_type_options: a question displaying several options
+	        //           - q_type_likert5: a 5-item likert scale based on two antonyms
+	        //           - q_type_likert7: a 7-item likert scale based on two antonyms
+	        //           - q_type_integer: an integer question from opt1 to opt2
+	        // "q_wording": "Question wording???", // (opt) the question wording
+	        // "q_options": "opt1, opt2, opt3",    // (opt) the question options
+	        // "q_result": "aValue"                // (opt) the place for the returned value
+	        // },
+	        
+	        //
+	    	// user
+	    	//
+	    	
+	        {
+	        "q_value": "age",
+	        "q_type": "q_type_integer",
+	        "q_wording": "How old are you?/¿Cuántos años tienes?",
+	        "q_options": "18, 99"
+	        },
+	    	
+	        {
+	        "q_value": "gender",
+	        "q_type": "q_type_options",
+	        "q_wording": "What is your gender?/¿Cuál es tu sexo?",
+	        "q_options": "male/hombre, female/mujer, other/otro"
+	        },
+	    	
+	        {
+	        "q_value": "educationLevel",
+	        "q_type": "q_type_ignore",
+	        "q_wording": "What is your education level?",
+	        "q_options": "high school, professional, college, not applicable"
+	        },
+	    	
+	        {
+	        "q_value": "previousExperience",
+	        "q_type": "q_type_ignore",
+	        "q_wording": "What is your previous experience with this app?",
+	        "q_options": "none, low, medium, high, expert"
+	        },
+	        
+	        //
+	    	// device
+	    	//
+	    	
+	        {
+	        "q_value": "deviceType",
+	        "q_type": "q_type_options",
+	        "q_wording": "Select your device:/Selecciona tu dispositivo:",
+	        "q_options": "laptop/portátil, tablet, smartphone, multimedia player/reproductor multimedia, other/otro"
+	        },
+	        
+	    	//
+	    	// physical environment
+	    	//
+	    	
+	        {
+	        "q_value": "temperature",
+	        "q_type": "q_type_ignore"
+	        },
+	    	
+	        {
+	        "q_value": "weather",
+	        "q_type": "q_type_options",
+	        "q_wording": "Select the weather today at your place:/¿Qué tiempo hace?",
+	        "q_options": "clear/despejado, cloudy/nuboso, windy/ventoso, rainy/lluvioso, snowy/nevando"
+	        },
+	    	
+	        {
+	        "q_value": "noise",
+	        "q_type": "q_type_ignore"
+	        },
+	    	
+	        {
+	        "q_value": "light",
+	        "q_type": "q_type_ignore"
+	        },
+	        
+	        
+	    	//
+	    	// social context
+	    	//
+	    	
+	        {
+	        "q_value": "socialCompany",
+	        "q_type": "q_type_options",
+	        "q_wording": "Are you accompanied by someone? You are.../¿Estás acompañado? Tú estás...",
+	        "q_options": "alone/solo, with a person/con una persona, with a group/con un grupo"
+	        },
+	        
+	        {
+	        "q_value": "socialArena",
+	        "q_type": "q_type_options",
+	        "q_wording": "Select your social arena:/Selecciona en qué ambiente te encuentras:",
+	        "q_options": "domestic/doméstico, work/trabajo, educational/educación, leisure/ocio"
+	        },
+	        
+	    	//
+	    	// location/time
+	    	//
+	    	
+	        {
+	        "q_value": "location",
+	        "q_type": "q_type_options",
+	        "q_wording": "What is your current location?/¿Dónde estás ahora mismo?",
+	        "q_options": "home/casa, office-school/oficina-clase, street/calle, other indoor/otro espacio cerrado, other outdoor/otro espacio abierto"
+	        },
+	    	
+	        {
+	        "q_value": "geoLocation",
+	        "q_type": "q_type_ignore"
+	        },
+	        
+	        {
+	        "q_value": "mobilityLevel",
+	        "q_type": "q_type_options",
+	        "q_wording": "Select your current mobility level:/Selecciona tu situación:",
+	        "q_options": "sitting/sentado, standing/de pie, walking/andando, sporting/haciendo deporte, driving/conduciendo, other/otro"
+	        },
+	    	
+	        {
+	        "q_value": "currentTime",
+	        "q_type": "q_type_auto"
+	        }
+	        
+	      
+	    ]
+}

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/carimModel.emf/src" editDirectory="/carimModel.emf.edit/src"
+    editorDirectory="/carimModel.emf.editor/src" modelPluginID="carimModel.emf" forceOverwrite="true"
+    modelName="CarimModel" editPluginClass="org.carim.model.provider.CarimModelEditPlugin"
+    editorPluginClass="org.carim.model.presentation.CarimModelEditorPlugin" rootImplementsInterface=""
+    testSuiteClass="org.carim.model.tests.CarimModelAllTests" importerID="org.eclipse.xsd.ecore.importer"
+    complianceLevel="6.0" copyrightFields="false" editPluginID="carimModel.emf.edit"
+    editorPluginID="carimModel.emf.editor" interfaceNamePattern="">
+  <foreignModel>../../carimModel.design/carimModel.xsd</foreignModel>
+  <genPackages prefix="carimModel" basePackage="org.carim" resource="XML" disposableProviderFactory="true"
+      ecorePackage="carimModel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//ContextualAppropriatenessT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ContextualAppropriatenessT/APPROPRIATE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ContextualAppropriatenessT/INAPPROPRIATE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ContextualAppropriatenessT/TOTALFAILURE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ContextualAppropriatenessT/INCOMPREHENSIBLE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//DeviceTypeT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//DeviceTypeT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//DeviceTypeT/LAPTOP"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//DeviceTypeT/TABLET"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//DeviceTypeT/SMARTPHONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//DeviceTypeT/MMPLAYER"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//DeviceTypeT/OTHER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//EducationLevelT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//EducationLevelT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//EducationLevelT/HIGHSCHOOL"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//EducationLevelT/PROFESSIONAL"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//EducationLevelT/COLLEGE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//EducationLevelT/NOTAPPLICABLE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//GenderT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//GenderT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//GenderT/MALE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//GenderT/FEMALE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//GenderT/OTHER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//LocationT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//LocationT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//LocationT/HOME"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//LocationT/OFFICESCHOOL"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//LocationT/STREET"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//LocationT/OTHERINDOOR"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//LocationT/OTHEROUTDOOR"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//McReasonT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//McReasonT/RECOGNITIONERROR"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//McReasonT/ENVIRONMENTCHANGE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//McReasonT/LOWMODAPPROPRIATENESS"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//McReasonT/USERDECISION"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//McReasonT/SYSTEMDECISION"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//McReasonT/INTERFACEADAPTATION"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//McReasonT/OTHER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//MmiTypeT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MmiTypeT/UNIMODAL"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MmiTypeT/EQUIVALENT"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MmiTypeT/ASSIGNED"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MmiTypeT/REDUNDANT"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MmiTypeT/COMPLEMENTARY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//MobilityLevelT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MobilityLevelT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MobilityLevelT/SITTING"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MobilityLevelT/STANDING"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MobilityLevelT/WALKING"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MobilityLevelT/SPORTING"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MobilityLevelT/DRIVING"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//MobilityLevelT/OTHER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//ModAppropT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ModAppropT/APPROPRIATE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ModAppropT/PARTIALLY"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ModAppropT/INAPPROPRIATE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//ModTypeT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ModTypeT/S"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ModTypeT/V"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ModTypeT/G"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ModTypeT/M"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//ParsingResultT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ParsingResultT/CORRECTLYUNDERSTOOD"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ParsingResultT/PARTIALLYUNDERSTOOD"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ParsingResultT/NOTHINGUNDERSTOOD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//PreviousExperienceT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//PreviousExperienceT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//PreviousExperienceT/LOW"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//PreviousExperienceT/MEDIUM"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//PreviousExperienceT/HIGH"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//PreviousExperienceT/EXPERT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//PromptTypeT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//PromptTypeT/OPEN"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//PromptTypeT/HALFOPEN"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//PromptTypeT/CLOSED"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//PromptTypeT/NOQUESTION"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//RoleT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//RoleT/SYSTEM"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//RoleT/USER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//ScreenOrientationT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenOrientationT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenOrientationT/LANDSCAPE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenOrientationT/PORTRAIT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//ScreenResolutionT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenResolutionT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenResolutionT/SMALLLet480x800"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenResolutionT/MEDIUMBt480x8001280x800"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenResolutionT/LARGEGet1280x800"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//ScreenSizeT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenSizeT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenSizeT/SMALLLet4in"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenSizeT/MEDIUMBt4in10in"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//ScreenSizeT/LARGEGet10in"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//SocialArenaT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//SocialArenaT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//SocialArenaT/DOMESTIC"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//SocialArenaT/WORK"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//SocialArenaT/EDUCATIONAL"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//SocialArenaT/LEISURE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//SocialCompanyT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//SocialCompanyT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//SocialCompanyT/ALONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//SocialCompanyT/WITHAPERSON"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//SocialCompanyT/WITHAGROUP"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//TaskSuccessT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//TaskSuccessT/SUCCEEDED"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//TaskSuccessT/SUCCONSTRAINTRELAXATIONSYSTEM"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//TaskSuccessT/SUCCONSTRAINTRELAXATIONUSER"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//TaskSuccessT/SUCCONSTRAINTRELAXATIONBOTH"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//TaskSuccessT/SUCNOSOLUTION"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//TaskSuccessT/FAILEDSYSTEM"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//TaskSuccessT/FAILEDUSER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//WeatherT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WeatherT/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WeatherT/SUNNY"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WeatherT/CLOUDY"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WeatherT/WINDY"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WeatherT/RAINY"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WeatherT/SNOWY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carimModel.ecore#//WirelessAccessTypeT">
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WirelessAccessTypeT/NOACCESS"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WirelessAccessTypeT/MOBILE"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WirelessAccessTypeT/WIFI"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WirelessAccessTypeT/BLUETOOTH"/>
+      <genEnumLiterals ecoreEnumLiteral="carimModel.ecore#//WirelessAccessTypeT/OTHER"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="carimModel.ecore#//ContextualAppropriatenessTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//DDayType"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//DDayTypeObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//DeviceTypeTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//DMonthType"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//DMonthTypeObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//DYearType"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//DYearTypeObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//EducationLevelTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//GenderTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//Likert5Value"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//Likert5ValueObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//Likert7Value"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//Likert7ValueObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//LocationTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//McReasonTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//MmiTypeTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//MobilityLevelTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//ModAppropTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//ModTypeTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//ParsingResultTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//PercentageT"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//PercentageTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//PreviousExperienceTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//PromptTypeTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//RoleTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//ScreenOrientationTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//ScreenResolutionTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//ScreenSizeTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//SocialArenaTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//SocialCompanyTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//TaskSuccessTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//THoursType"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//THoursTypeObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//TMinsType"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//TMinsTypeObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//TSecsType"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//TSecsTypeObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//WeatherTObject"/>
+    <genDataTypes ecoreDataType="carimModel.ecore#//WirelessAccessTypeTObject"/>
+    <genClasses ecoreClass="carimModel.ecore#//Attitude"/>
+    <genClasses ecoreClass="carimModel.ecore#//Avm"/>
+    <genClasses ecoreClass="carimModel.ecore#//CommunicationContext">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//CommunicationContext/wirelessAccessType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//CommunicationContext/accessPointName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//CommunicationContext/signalStrength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//CommunicationContext/receivedDataThroughput"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//CommunicationContext/sentDataThroughput"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//CommunicationContext/rtt"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//CommunicationContext/srt"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//Cooperativity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Cooperativity/contextualAppropriateness"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//DateTimeT">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DateTimeT/dDay"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DateTimeT/dMonth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DateTimeT/dYear"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DateTimeT/tHours"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DateTimeT/tMins"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DateTimeT/tSecs"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//DeviceContext">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DeviceContext/deviceType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DeviceContext/screenSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DeviceContext/screenResolution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DeviceContext/screenOrientation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DeviceContext/screenBrightnessLevel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DeviceContext/volumeLevel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DeviceContext/memoryUsage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DeviceContext/cpuUsage"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//Dialogue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Dialogue/baseTimestamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//Dialogue/task"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//Dialogue/step"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//DialogueStepT">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//DialogueStepT/systemTurn"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//DialogueStepT/userTurn"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference carimModel.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference carimModel.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//DocumentRoot/trial"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//DynamicContext">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//DynamicContext/physicalContext"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//DynamicContext/socialContext"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//DynamicContext/locationTimeContext"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//DynamicContext/deviceContext"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//DynamicContext/communicationContext"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//GuiInput">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//GuiInput/textElements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//GuiInput/navigationActions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//GuiInput/navigationMoves"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//GuiInput/navigationLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//GuiInput/exploringActions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//GuiInput/transferringActions"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//LocationTimeContext">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//LocationTimeContext/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//LocationTimeContext/geoLatitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//LocationTimeContext/geoLongitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//LocationTimeContext/mobilityLevel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference carimModel.ecore#//LocationTimeContext/time"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="carimModel.ecore#//Metacomm">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Metacomm/isHelp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Metacomm/isCorrection"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//ModalityAppropriateness">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//ModalityAppropriateness/appropriateness"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//ModalityChange">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//ModalityChange/origin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//ModalityChange/reason"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//ModalityInfo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//ModalityInfo/modalityType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//ModalityInfo/mminteractionType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//ModalityInfo/appropriateness"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//ModalityInfo/synchroni"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//ModalityInfo/change"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//ModalitySynchroni">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//ModalitySynchroni/nlags"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//ModalitySynchroni/lagtime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//ModalitySynchroni/nevents"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//MotionInput">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//MotionInput/tiltMovements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//MotionInput/twistMovements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//MotionInput/shakeMovements"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//PhysicalContext">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//PhysicalContext/temperature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//PhysicalContext/weather"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//PhysicalContext/noise"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//PhysicalContext/light"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//SocialContext">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SocialContext/company"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SocialContext/arena"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//SpeechInput">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/overallWords"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/substitutedWords"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/deletedWords"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/insertedWords"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/overallSentences"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/substitutedSentences"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/deletedSentences"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/insertedSentences"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/overallConcepts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/substitutedConcepts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/deletedConcepts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/insertedConcepts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechInput/parsingResult"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//SpeechOutput">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechOutput/aNCO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechOutput/aNIN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechOutput/aNPA"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechOutput/aNFA"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SpeechOutput/promptType"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//SystemMetacomm">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SystemMetacomm/isASRReject"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SystemMetacomm/isDIVReject"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//SystemMetacomm/isGRReject"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//SystemTurn">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//SystemTurn/metacomm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//SystemTurn/speechOutput"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//SystemTurn/cooperativity"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//Task">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Task/success"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Task/reason"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//Task/avm"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//Trial">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Trial/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//Trial/userData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//Trial/dialogues"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="carimModel.ecore#//Turn">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Turn/feedbackDelay"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Turn/feedbackDuration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Turn/actionDuration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Turn/elements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Turn/feedback"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Turn/concepts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Turn/noise"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//Turn/questions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//Turn/modality"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//Turn/context"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//UserAttitude">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserAttitude/usefulness"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserAttitude/pleasantness"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserAttitude/integration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserAttitude/selfEfficacy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserAttitude/comfort"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//UserData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//UserData/userRatings"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserData/userMood"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//UserData/userAttitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserData/age"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserData/gender"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserData/educationLevel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserData/previousExperience"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//UserMetacomm">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserMetacomm/isTimeOut"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserMetacomm/isCancel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserMetacomm/isRestart"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserMetacomm/isBargein"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserMetacomm/isSuccessfulBargein"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//UserRatings">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserRatings/practical"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserRatings/predictable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserRatings/clearlyStructured"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserRatings/simple"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserRatings/stylish"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserRatings/premium"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserRatings/creative"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserRatings/captivating"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserRatings/beautiful"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carimModel.ecore#//UserRatings/good"/>
+    </genClasses>
+    <genClasses ecoreClass="carimModel.ecore#//UserTurn">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//UserTurn/metacomm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//UserTurn/speechInput"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//UserTurn/guiInput"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carimModel.ecore#//UserTurn/motionInput"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

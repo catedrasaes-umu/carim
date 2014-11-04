@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/instantiator.mmiEvents.emf/src" modelPluginID="mmiEventsEmf"
+    modelName="MmiEvents" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false" usedGenPackages="../../carimModel.emf/model/carimModel.genmodel#//model">
+  <foreignModel>mmiEvents.ecore</foreignModel>
+  <genPackages prefix="Events" basePackage="org.mmi" disposableProviderFactory="true"
+      ecorePackage="mmiEvents.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="mmiEvents.ecore#//event_t">
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/TOUCH"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/CLICK"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/LONGCLICK"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/ITEMCLICK"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/ITEMLONGCLICK"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SCROLL"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/MOVE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/TILT"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/TWIST"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SHAKE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NAVIGATIONMOVE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NAVIGATIONLENGTH"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NAVIGATIONACTION"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NAVIGATIONEXPLORE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/MOTIONACTION"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/KEYTEXT"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/KEYEXPLORE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/KEYCOMMAND"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/TEXTWORD"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/TEXTEXPLORE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/TEXTCOMMAND"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/OVERALLWORDS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SUBSTITUTEDWORDS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/DELETEDWORDS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/INSERTEDWORDS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/OVERALLSENTENCES"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SUBSTITUTEDSENTENCES"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/DELETEDSENTENCES"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/INSERTEDSENTENCES"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/OVERALLCONCEPTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SUBSTITUTEDCONCEPTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/DELETEDCONCEPTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/INSERTEDCONCEPTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/CORRECTLYPARSEDUTTERANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/PARTIALLYPARSEDUTTERANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/INCORRECTLYPARSEDUTTERANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/GUIELEMENTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/GUIFEEDBACK"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/GUICONCEPTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/GUINOISE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/GUIQUESTIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SPEECHELEMENTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SPEECHFEEDBACK"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SPEECHCONCEPTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SPEECHNOISE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SPEECHQUESTIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NEWELEMENTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NEWFEEDBACKELEMENTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NEWCONCEPTS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NEWNOISE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NEWQUESTIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/HELPTURN"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/CORRECTIONTURN"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/TIMEOUT"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/CANCELTURN"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/RESTARTTURN"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/BARGEIN"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/DIVREJECTION"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/ASRREJECTION"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/GRREJECTION"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/CORRECTANSWER"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/INCORRECTANSWER"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/PARTIALLYCORRECTANSWER"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NOTANSWER"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/OPENPROMPT"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/HALFOPENPROMPT"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/CLOSEDPROMPT"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/NOQUESTIONPROMPT"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/WEATHERUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/AMBIENTUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/USERDATAUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/USERRATINGSUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/USERATTITUDEUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/USERMOODUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SOCIALUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/LOCATIONUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/MOBILITYUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/TIMEUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/DEVICEFEATURESUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/DEVICERUNNINGFEATURESUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/DEVICEWORKLOADUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SIGNALUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/THROUGHPUTUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SERVERRESPONSEUPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/APPSTART"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/APPEND"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/STARTDIALOGUE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/ENDDIALOGUE"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/STARTSYSTEMTURN"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SYSTEMFEEDBACKSTART"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SYSTEMACTIONSTART"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/SYSTEMACTIONEND"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/ENDSYSTEMTURN"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/STARTUSERTURN"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/USERFEEDBACKSTART"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/USERACTIONSTART"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/USERACTIONEND"/>
+      <genEnumLiterals ecoreEnumLiteral="mmiEvents.ecore#//event_t/ENDUSERTURN"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//Event/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//Event/timestamp"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//InputEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//OutputEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//DialogueContentEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DialogueContentEvent/nitems"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//MetacommEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//TurnControlEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//TurnTimingEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//ContextEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//PhysicalEnvironmentContextEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//WeatherUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//WeatherUpdateEvent/temperature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//WeatherUpdateEvent/weather"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//AmbientUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//AmbientUpdateEvent/noise"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//AmbientUpdateEvent/light"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//UserContextEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//UserDataUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserDataUpdateEvent/age"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserDataUpdateEvent/gender"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserDataUpdateEvent/educationLevel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserDataUpdateEvent/previousExperience"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//UserRatingsUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserRatingsUpdateEvent/practical"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserRatingsUpdateEvent/predictable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserRatingsUpdateEvent/clearlyStructured"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserRatingsUpdateEvent/simple"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserRatingsUpdateEvent/stylish"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserRatingsUpdateEvent/premium"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserRatingsUpdateEvent/creative"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserRatingsUpdateEvent/captivating"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserRatingsUpdateEvent/beautiful"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserRatingsUpdateEvent/good"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//UserAttitudeUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserAttitudeUpdateEvent/usefulness"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserAttitudeUpdateEvent/pleasantness"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserAttitudeUpdateEvent/integration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserAttitudeUpdateEvent/selfEfficacy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserAttitudeUpdateEvent/comfort"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//UserMoodUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//UserMoodUpdateEvent/mood"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//SocialContextEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//SocialUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//SocialUpdateEvent/socialCompany"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//SocialUpdateEvent/socialArena"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//LocationTimeContextEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//LocationUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//LocationUpdateEvent/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//LocationUpdateEvent/geo_latitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//LocationUpdateEvent/geo_longitude"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//MobilityUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//MobilityUpdateEvent/mobilityLevel"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//TimeUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//TimeUpdateEvent/d_year"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//TimeUpdateEvent/d_month"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//TimeUpdateEvent/d_day"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//TimeUpdateEvent/t_hours"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//TimeUpdateEvent/t_mins"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//TimeUpdateEvent/t_secs"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//DeviceContextEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//DeviceFeaturesUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeviceFeaturesUpdateEvent/deviceType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeviceFeaturesUpdateEvent/screenSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeviceFeaturesUpdateEvent/screenResolution"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//DeviceRunningFeaturesUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeviceRunningFeaturesUpdateEvent/screenOrientation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeviceRunningFeaturesUpdateEvent/brightness"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeviceRunningFeaturesUpdateEvent/volume"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//DeviceWorkloadUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeviceWorkloadUpdateEvent/memoryUsage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeviceWorkloadUpdateEvent/cpuUsage"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//CommunicationContextEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//SignalUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//SignalUpdateEvent/wirelessAccessType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//SignalUpdateEvent/accessPointName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//SignalUpdateEvent/signalStrength"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//ThroughputUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//ThroughputUpdateEvent/receivedData"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//ThroughputUpdateEvent/sentData"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//ServerResponseUpdateEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//ServerResponseUpdateEvent/rtt"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//ServerResponseUpdateEvent/srt"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//NavigationEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//MotionEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//TextEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//SpeechInputEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//ScreenEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//ScreenContentEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//ScreenContentEvent/nitems"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//SpeechOutputEvent"/>
+    <genClasses image="false" ecoreClass="mmiEvents.ecore#//SpeechOutputContentEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//SpeechOutputContentEvent/nitems"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//TouchEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//ClickEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//LongClickEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//ScrollEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//MoveEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//MoveEvent/length"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//NavigationMoveEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//NavigationMoveEvent/length"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//NavigationActionEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//NavigationExploreEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//TiltEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//TwistEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//ShakeEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//MotionActionEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//KeyTextEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//KeyTextEvent/code"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//KeyExploreEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//KeyExploreEvent/code"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//KeyCommandEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//KeyCommandEvent/code"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//TextWordEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//TextExploreEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//TextCommandEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//GuiElementsEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//GuiFeedbackEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//GuiConceptsEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//GuiNoiseEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//GuiQuestionsEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//SpeechElementsEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//SpeechFeedbackEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//SpeechConceptsEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//SpeechNoiseEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//SpeechQuestionsEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//CorrectAnswerEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//IncorrectAnswerEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//PartiallyCorrectAnswerEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//NotAnswerEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//OpenPromptEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//HalfOpenPromptEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//ClosedPromptEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//NoQuestionPromptEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//OverallWordsEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//OverallWordsEvent/nwords"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//SubstitutedWordsEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//SubstitutedWordsEvent/nwords"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//DeletedWordsEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeletedWordsEvent/nwords"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//InsertedWordsEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//InsertedWordsEvent/nwords"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//OverallSentencesEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//OverallSentencesEvent/nsentences"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//SubstitutedSentencesEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//SubstitutedSentencesEvent/nsentences"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//DeletedSentencesEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeletedSentencesEvent/nsentences"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//InsertedSentencesEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//InsertedSentencesEvent/nsentences"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//OverallConceptsEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//OverallConceptsEvent/nconcepts"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//SubstitutedConceptsEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//SubstitutedConceptsEvent/nconcepts"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//DeletedConceptsEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//DeletedConceptsEvent/nconcepts"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//InsertedConceptsEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//InsertedConceptsEvent/nconcepts"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//CorrectlyParsedUtteranceEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//PartiallyParsedUtteranceEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//IncorrectlyParsedUtteranceEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//NewElementsEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//NewFeedbackElementsEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//NewConceptsEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//NewNoiseEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//NewQuestionsEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//HelpTurnEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//CorrectionTurnEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//CancelTurnEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//RestartTurnEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//BargeinEvent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mmiEvents.ecore#//BargeinEvent/successful"/>
+    </genClasses>
+    <genClasses ecoreClass="mmiEvents.ecore#//DIVRejectionEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//ASRRejectionEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//GRRejectionEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//TimeoutEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//AppStartEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//AppEndEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//StartDialogueEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//EndDialogueEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//StartSystemTurnEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//EndSystemTurnEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//StartUserTurnEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//EndUserTurnEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//SystemFeedbackStartEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//SystemActionStartEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//SystemActionEndEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//UserFeedbackStartEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//UserActionStartEvent"/>
+    <genClasses ecoreClass="mmiEvents.ecore#//UserActionEndEvent"/>
+  </genPackages>
+</genmodel:GenModel>

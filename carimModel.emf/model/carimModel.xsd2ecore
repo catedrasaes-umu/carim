@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="../../carimModel.design/carimModel.xsd#/"
+    outputs="model.ecore#/" topToBottom="true">
+  <nested inputs="bundleentry://502.fwk1019765725/cache/www.w3.org/2001/XMLSchema.xsd#//float;XSDSimpleTypeDefinition=11"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Float"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//likert7_value;XSDSimpleTypeDefinition=10"
+      outputs="model.ecore#//Likert7Value"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19"
+      outputs="model.ecore#//UserRatings">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//UserRatings/practical"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//UserRatings/predictable"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//UserRatings/clearlyStructured"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//UserRatings/simple"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//UserRatings/stylish"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="model.ecore#//UserRatings/premium"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="model.ecore#//UserRatings/creative"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="model.ecore#//UserRatings/captivating"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="model.ecore#//UserRatings/beautiful"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserRatings;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="model.ecore#//UserRatings/good"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Avm;XSDElementDeclaration"
+      outputs="model.ecore#//DocumentRoot/avm"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//contextual_appropriateness_t;XSDSimpleTypeDefinition=6"
+      outputs="model.ecore#//ContextualAppropriatenessT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//contextual_appropriateness_t;XSDSimpleTypeDefinition=6/XSDEnumerationFacet"
+        outputs="model.ecore#//ContextualAppropriatenessT/APPROPRIATE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//contextual_appropriateness_t;XSDSimpleTypeDefinition=6/XSDEnumerationFacet=1"
+        outputs="model.ecore#//ContextualAppropriatenessT/INAPPROPRIATE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//contextual_appropriateness_t;XSDSimpleTypeDefinition=6/XSDEnumerationFacet=2"
+        outputs="model.ecore#//ContextualAppropriatenessT/TOTALFAILURE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//contextual_appropriateness_t;XSDSimpleTypeDefinition=6/XSDEnumerationFacet=3"
+        outputs="model.ecore#//ContextualAppropriatenessT/INCOMPREHENSIBLE"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Cooperativity;XSDComplexTypeDefinition=9"
+      outputs="model.ecore#//Cooperativity">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Cooperativity;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//Cooperativity/contextualAppropriateness"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Cooperativity;XSDElementDeclaration=7"
+      outputs="model.ecore#//DocumentRoot/cooperativity"/>
+  <nested inputs="bundleentry://502.fwk1019765725/cache/www.w3.org/2001/XMLSchema.xsd#//long;XSDSimpleTypeDefinition=43"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Long"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//task_success_t;XSDSimpleTypeDefinition"
+      outputs="model.ecore#//TaskSuccessT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//task_success_t;XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="model.ecore#//TaskSuccessT/SUCCEEDED"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//task_success_t;XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="model.ecore#//TaskSuccessT/SUCCONSTRAINTRELAXATIONSYSTEM"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//task_success_t;XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="model.ecore#//TaskSuccessT/SUCCONSTRAINTRELAXATIONUSER"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//task_success_t;XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="model.ecore#//TaskSuccessT/SUCCONSTRAINTRELAXATIONBOTH"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//task_success_t;XSDSimpleTypeDefinition/XSDEnumerationFacet=4"
+        outputs="model.ecore#//TaskSuccessT/SUCNOSOLUTION"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//task_success_t;XSDSimpleTypeDefinition/XSDEnumerationFacet=5"
+        outputs="model.ecore#//TaskSuccessT/FAILEDSYSTEM"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//task_success_t;XSDSimpleTypeDefinition/XSDEnumerationFacet=6"
+        outputs="model.ecore#//TaskSuccessT/FAILEDUSER"/>
+  </nested>
+  <nested inputs="bundleentry://502.fwk1019765725/cache/www.w3.org/2001/XMLSchema.xsd#//string;XSDSimpleTypeDefinition=9"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Avm;XSDComplexTypeDefinition=3"
+      outputs="model.ecore#//Avm"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Task;XSDComplexTypeDefinition"
+      outputs="model.ecore#//Task">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Task;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//Task/success"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Task;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//Task/reason"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Task;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//Task/avm"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//mod_type_t;XSDSimpleTypeDefinition=4"
+      outputs="model.ecore#//ModTypeT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mod_type_t;XSDSimpleTypeDefinition=4/XSDEnumerationFacet"
+        outputs="model.ecore#//ModTypeT/S"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mod_type_t;XSDSimpleTypeDefinition=4/XSDEnumerationFacet=1"
+        outputs="model.ecore#//ModTypeT/V"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mod_type_t;XSDSimpleTypeDefinition=4/XSDEnumerationFacet=2"
+        outputs="model.ecore#//ModTypeT/G"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mod_type_t;XSDSimpleTypeDefinition=4/XSDEnumerationFacet=3"
+        outputs="model.ecore#//ModTypeT/SV"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mod_type_t;XSDSimpleTypeDefinition=4/XSDEnumerationFacet=4"
+        outputs="model.ecore#//ModTypeT/SG"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mod_type_t;XSDSimpleTypeDefinition=4/XSDEnumerationFacet=5"
+        outputs="model.ecore#//ModTypeT/VG"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mod_type_t;XSDSimpleTypeDefinition=4/XSDEnumerationFacet=6"
+        outputs="model.ecore#//ModTypeT/SVG"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//mmi_type_t;XSDSimpleTypeDefinition=5"
+      outputs="model.ecore#//MmiTypeT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mmi_type_t;XSDSimpleTypeDefinition=5/XSDEnumerationFacet"
+        outputs="model.ecore#//MmiTypeT/UNIMODAL"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mmi_type_t;XSDSimpleTypeDefinition=5/XSDEnumerationFacet=1"
+        outputs="model.ecore#//MmiTypeT/EQUIVALENT"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mmi_type_t;XSDSimpleTypeDefinition=5/XSDEnumerationFacet=2"
+        outputs="model.ecore#//MmiTypeT/ASSIGNED"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mmi_type_t;XSDSimpleTypeDefinition=5/XSDEnumerationFacet=3"
+        outputs="model.ecore#//MmiTypeT/REDUNDANT"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mmi_type_t;XSDSimpleTypeDefinition=5/XSDEnumerationFacet=4"
+        outputs="model.ecore#//MmiTypeT/COMPLEMENTARY"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//mod_approp_t;XSDSimpleTypeDefinition=3"
+      outputs="model.ecore#//ModAppropT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mod_approp_t;XSDSimpleTypeDefinition=3/XSDEnumerationFacet"
+        outputs="model.ecore#//ModAppropT/APPROPRIATE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mod_approp_t;XSDSimpleTypeDefinition=3/XSDEnumerationFacet=1"
+        outputs="model.ecore#//ModAppropT/PARTIALLY"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mod_approp_t;XSDSimpleTypeDefinition=3/XSDEnumerationFacet=2"
+        outputs="model.ecore#//ModAppropT/INAPPROPRIATE"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityAppropriateness;XSDComplexTypeDefinition=6"
+      outputs="model.ecore#//ModalityAppropriateness">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityAppropriateness;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//ModalityAppropriateness/appropriateness"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//ModalitySynchroni;XSDComplexTypeDefinition=4"
+      outputs="model.ecore#//ModalitySynchroni">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalitySynchroni;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//ModalitySynchroni/nlags"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalitySynchroni;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//ModalitySynchroni/lagtime"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalitySynchroni;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//ModalitySynchroni/nevents"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//role_t;XSDSimpleTypeDefinition=1"
+      outputs="model.ecore#//RoleT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//role_t;XSDSimpleTypeDefinition=1/XSDEnumerationFacet"
+        outputs="model.ecore#//RoleT/SYSTEM"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//role_t;XSDSimpleTypeDefinition=1/XSDEnumerationFacet=1"
+        outputs="model.ecore#//RoleT/USER"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//mc_reason_t;XSDSimpleTypeDefinition=2"
+      outputs="model.ecore#//McReasonT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mc_reason_t;XSDSimpleTypeDefinition=2/XSDEnumerationFacet"
+        outputs="model.ecore#//McReasonT/RECOGNITIONERROR"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mc_reason_t;XSDSimpleTypeDefinition=2/XSDEnumerationFacet=1"
+        outputs="model.ecore#//McReasonT/ENVIRONMENTCHANGE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mc_reason_t;XSDSimpleTypeDefinition=2/XSDEnumerationFacet=2"
+        outputs="model.ecore#//McReasonT/LOWMODAPPROPRIATENESS"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mc_reason_t;XSDSimpleTypeDefinition=2/XSDEnumerationFacet=3"
+        outputs="model.ecore#//McReasonT/USERDECISION"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mc_reason_t;XSDSimpleTypeDefinition=2/XSDEnumerationFacet=4"
+        outputs="model.ecore#//McReasonT/SYSTEMDECISION"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mc_reason_t;XSDSimpleTypeDefinition=2/XSDEnumerationFacet=5"
+        outputs="model.ecore#//McReasonT/INTERFACEADAPTATION"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mc_reason_t;XSDSimpleTypeDefinition=2/XSDEnumerationFacet=6"
+        outputs="model.ecore#//McReasonT/OTHER"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityChange;XSDComplexTypeDefinition=5"
+      outputs="model.ecore#//ModalityChange">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityChange;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//ModalityChange/origin"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityChange;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//ModalityChange/reason"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityInfo;XSDComplexTypeDefinition=7"
+      outputs="model.ecore#//ModalityInfo">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityInfo;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//ModalityInfo/modalityType"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityInfo;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//ModalityInfo/mmiType"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityInfo;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//ModalityInfo/appropriateness"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityInfo;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//ModalityInfo/synchroni"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityInfo;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//ModalityInfo/change"/>
+  </nested>
+  <nested inputs="bundleentry://502.fwk1019765725/cache/www.w3.org/2001/XMLSchema.xsd#//int;XSDSimpleTypeDefinition=44"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//weather_t;XSDSimpleTypeDefinition=11"
+      outputs="model.ecore#//WeatherT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//weather_t;XSDSimpleTypeDefinition=11/XSDEnumerationFacet"
+        outputs="model.ecore#//WeatherT/SUNNY"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//weather_t;XSDSimpleTypeDefinition=11/XSDEnumerationFacet=1"
+        outputs="model.ecore#//WeatherT/CLOUDY"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//weather_t;XSDSimpleTypeDefinition=11/XSDEnumerationFacet=2"
+        outputs="model.ecore#//WeatherT/WINDY"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//weather_t;XSDSimpleTypeDefinition=11/XSDEnumerationFacet=3"
+        outputs="model.ecore#//WeatherT/RAINY"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//weather_t;XSDSimpleTypeDefinition=11/XSDEnumerationFacet=4"
+        outputs="model.ecore#//WeatherT/SNOWY"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//percentage_t;XSDSimpleTypeDefinition=24"
+      outputs="model.ecore#//PercentageT"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//PhysicalContext;XSDComplexTypeDefinition=24"
+      outputs="model.ecore#//PhysicalContext">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//PhysicalContext;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//PhysicalContext/temperature"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//PhysicalContext;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//PhysicalContext/weather"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//PhysicalContext;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//PhysicalContext/noise"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//PhysicalContext;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//PhysicalContext/light"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//social_company_t;XSDSimpleTypeDefinition=15"
+      outputs="model.ecore#//SocialCompanyT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//social_company_t;XSDSimpleTypeDefinition=15/XSDEnumerationFacet"
+        outputs="model.ecore#//SocialCompanyT/ALONE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//social_company_t;XSDSimpleTypeDefinition=15/XSDEnumerationFacet=1"
+        outputs="model.ecore#//SocialCompanyT/WITHAPERSON"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//social_company_t;XSDSimpleTypeDefinition=15/XSDEnumerationFacet=2"
+        outputs="model.ecore#//SocialCompanyT/WITHAGROUP"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//social_arena_t;XSDSimpleTypeDefinition=16"
+      outputs="model.ecore#//SocialArenaT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//social_arena_t;XSDSimpleTypeDefinition=16/XSDEnumerationFacet"
+        outputs="model.ecore#//SocialArenaT/DOMESTIC"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//social_arena_t;XSDSimpleTypeDefinition=16/XSDEnumerationFacet=1"
+        outputs="model.ecore#//SocialArenaT/WORK"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//social_arena_t;XSDSimpleTypeDefinition=16/XSDEnumerationFacet=2"
+        outputs="model.ecore#//SocialArenaT/EDUCATIONAL"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//social_arena_t;XSDSimpleTypeDefinition=16/XSDEnumerationFacet=3"
+        outputs="model.ecore#//SocialArenaT/LEISURE"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//SocialContext;XSDComplexTypeDefinition=25"
+      outputs="model.ecore#//SocialContext">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SocialContext;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//SocialContext/company"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SocialContext;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//SocialContext/arena"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//location_t;XSDSimpleTypeDefinition=17"
+      outputs="model.ecore#//LocationT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//location_t;XSDSimpleTypeDefinition=17/XSDEnumerationFacet"
+        outputs="model.ecore#//LocationT/HOME"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//location_t;XSDSimpleTypeDefinition=17/XSDEnumerationFacet=1"
+        outputs="model.ecore#//LocationT/OFFICESCHOOL"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//location_t;XSDSimpleTypeDefinition=17/XSDEnumerationFacet=2"
+        outputs="model.ecore#//LocationT/STREET"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//location_t;XSDSimpleTypeDefinition=17/XSDEnumerationFacet=3"
+        outputs="model.ecore#//LocationT/OTHERINDOOR"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//location_t;XSDSimpleTypeDefinition=17/XSDEnumerationFacet=4"
+        outputs="model.ecore#//LocationT/OTHEROUTDOOR"/>
+  </nested>
+  <nested inputs="bundleentry://502.fwk1019765725/cache/www.w3.org/2001/XMLSchema.xsd#//double;XSDSimpleTypeDefinition=12"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//geo_coordinate_t;XSDComplexTypeDefinition=29/XSDParticle/XSDModelGroup/XSDParticle/latitude;XSDElementDeclaration/XSDSimpleTypeDefinition"
+      outputs="model.ecore#//LatitudeType"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//geo_coordinate_t;XSDComplexTypeDefinition=29/XSDParticle/XSDModelGroup/XSDParticle=1/longitude;XSDElementDeclaration/XSDSimpleTypeDefinition"
+      outputs="model.ecore#//LongitudeType"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//geo_coordinate_t;XSDComplexTypeDefinition=29"
+      outputs="model.ecore#//GeoCoordinateT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//geo_coordinate_t;XSDComplexTypeDefinition=29/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//GeoCoordinateT/latitude"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//geo_coordinate_t;XSDComplexTypeDefinition=29/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//GeoCoordinateT/longitude"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//mobility_level_t;XSDSimpleTypeDefinition=18"
+      outputs="model.ecore#//MobilityLevelT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mobility_level_t;XSDSimpleTypeDefinition=18/XSDEnumerationFacet"
+        outputs="model.ecore#//MobilityLevelT/SITTING"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mobility_level_t;XSDSimpleTypeDefinition=18/XSDEnumerationFacet=1"
+        outputs="model.ecore#//MobilityLevelT/STANDING"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mobility_level_t;XSDSimpleTypeDefinition=18/XSDEnumerationFacet=2"
+        outputs="model.ecore#//MobilityLevelT/WALKING"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mobility_level_t;XSDSimpleTypeDefinition=18/XSDEnumerationFacet=3"
+        outputs="model.ecore#//MobilityLevelT/SPORTING"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mobility_level_t;XSDSimpleTypeDefinition=18/XSDEnumerationFacet=4"
+        outputs="model.ecore#//MobilityLevelT/DRIVING"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//mobility_level_t;XSDSimpleTypeDefinition=18/XSDEnumerationFacet=5"
+        outputs="model.ecore#//MobilityLevelT/OTHER"/>
+  </nested>
+  <nested inputs="bundleentry://502.fwk1019765725/cache/www.w3.org/2001/XMLSchema.xsd#//time;XSDSimpleTypeDefinition=16"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Time"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//LocationTimeContext;XSDComplexTypeDefinition=26"
+      outputs="model.ecore#//LocationTimeContext">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//LocationTimeContext;XSDComplexTypeDefinition=26/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//LocationTimeContext/location"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//LocationTimeContext;XSDComplexTypeDefinition=26/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//LocationTimeContext/geolocation"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//LocationTimeContext;XSDComplexTypeDefinition=26/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//LocationTimeContext/mobilityLevel"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//LocationTimeContext;XSDComplexTypeDefinition=26/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//LocationTimeContext/time"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//device_type_t;XSDSimpleTypeDefinition=19"
+      outputs="model.ecore#//DeviceTypeT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//device_type_t;XSDSimpleTypeDefinition=19/XSDEnumerationFacet"
+        outputs="model.ecore#//DeviceTypeT/LAPTOP"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//device_type_t;XSDSimpleTypeDefinition=19/XSDEnumerationFacet=1"
+        outputs="model.ecore#//DeviceTypeT/TABLET"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//device_type_t;XSDSimpleTypeDefinition=19/XSDEnumerationFacet=2"
+        outputs="model.ecore#//DeviceTypeT/SMARTPHONE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//device_type_t;XSDSimpleTypeDefinition=19/XSDEnumerationFacet=3"
+        outputs="model.ecore#//DeviceTypeT/MMPLAYER"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//device_type_t;XSDSimpleTypeDefinition=19/XSDEnumerationFacet=4"
+        outputs="model.ecore#//DeviceTypeT/OTHER"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//screen_size_t;XSDSimpleTypeDefinition=20"
+      outputs="model.ecore#//ScreenSizeT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//screen_size_t;XSDSimpleTypeDefinition=20/XSDEnumerationFacet"
+        outputs="model.ecore#//ScreenSizeT/SMALLLet4in"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//screen_size_t;XSDSimpleTypeDefinition=20/XSDEnumerationFacet=1"
+        outputs="model.ecore#//ScreenSizeT/NORMALBt4in10in"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//screen_size_t;XSDSimpleTypeDefinition=20/XSDEnumerationFacet=2"
+        outputs="model.ecore#//ScreenSizeT/LARGEGet10in"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//screen_resolution_t;XSDSimpleTypeDefinition=21"
+      outputs="model.ecore#//ScreenResolutionT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//screen_resolution_t;XSDSimpleTypeDefinition=21/XSDEnumerationFacet"
+        outputs="model.ecore#//ScreenResolutionT/SMALLLet480x800"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//screen_resolution_t;XSDSimpleTypeDefinition=21/XSDEnumerationFacet=1"
+        outputs="model.ecore#//ScreenResolutionT/NORMALBt480x8001280x800"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//screen_resolution_t;XSDSimpleTypeDefinition=21/XSDEnumerationFacet=2"
+        outputs="model.ecore#//ScreenResolutionT/LARGEGet1280x800"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//screen_orientation_t;XSDSimpleTypeDefinition=22"
+      outputs="model.ecore#//ScreenOrientationT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//screen_orientation_t;XSDSimpleTypeDefinition=22/XSDEnumerationFacet"
+        outputs="model.ecore#//ScreenOrientationT/LANDSCAPE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//screen_orientation_t;XSDSimpleTypeDefinition=22/XSDEnumerationFacet=1"
+        outputs="model.ecore#//ScreenOrientationT/PORTRAIT"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//DeviceContext;XSDComplexTypeDefinition=27"
+      outputs="model.ecore#//DeviceContext">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DeviceContext;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//DeviceContext/deviceType"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DeviceContext;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//DeviceContext/screenSize"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DeviceContext;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//DeviceContext/screenResolution"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DeviceContext;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//DeviceContext/screenOrientation"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DeviceContext;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//DeviceContext/screenBrightnessLevel"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DeviceContext;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="model.ecore#//DeviceContext/volumeLevel"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DeviceContext;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="model.ecore#//DeviceContext/memoryLoad"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DeviceContext;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="model.ecore#//DeviceContext/cpuLoad"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//wireless_access_type_t;XSDSimpleTypeDefinition=23"
+      outputs="model.ecore#//WirelessAccessTypeT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//wireless_access_type_t;XSDSimpleTypeDefinition=23/XSDEnumerationFacet"
+        outputs="model.ecore#//WirelessAccessTypeT/CELLULAR"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//wireless_access_type_t;XSDSimpleTypeDefinition=23/XSDEnumerationFacet=1"
+        outputs="model.ecore#//WirelessAccessTypeT/WLAN"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//wireless_access_type_t;XSDSimpleTypeDefinition=23/XSDEnumerationFacet=2"
+        outputs="model.ecore#//WirelessAccessTypeT/BLUETOOTH"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//wireless_access_type_t;XSDSimpleTypeDefinition=23/XSDEnumerationFacet=3"
+        outputs="model.ecore#//WirelessAccessTypeT/OTHER"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//wireless_access_type_t;XSDSimpleTypeDefinition=23/XSDEnumerationFacet=4"
+        outputs="model.ecore#//WirelessAccessTypeT/NOACCESS"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//CommunicationContext;XSDComplexTypeDefinition=28"
+      outputs="model.ecore#//CommunicationContext">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//CommunicationContext;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//CommunicationContext/wirelessAccessType"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//CommunicationContext;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//CommunicationContext/accessPointName"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//CommunicationContext;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//CommunicationContext/signalStrength"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//CommunicationContext;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//CommunicationContext/receivedDataThroughput"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//CommunicationContext;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//CommunicationContext/sentDataThroughput"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//CommunicationContext;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="model.ecore#//CommunicationContext/rtt"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//CommunicationContext;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="model.ecore#//CommunicationContext/srt"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//DynamicContext;XSDComplexTypeDefinition=23"
+      outputs="model.ecore#//DynamicContext">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DynamicContext;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//DynamicContext/physicalContext"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DynamicContext;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//DynamicContext/socialContext"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DynamicContext;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//DynamicContext/locationTimeContext"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DynamicContext;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//DynamicContext/deviceContext"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//DynamicContext;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//DynamicContext/communicationContext"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2"
+      outputs="model.ecore#//Turn">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//Turn/feedbackDelay"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//Turn/feedbackDuration"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//Turn/actionDuration"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//Turn/elements"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//Turn/feedback"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="model.ecore#//Turn/concepts"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="model.ecore#//Turn/noise"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="model.ecore#//Turn/questions"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="model.ecore#//Turn/modality"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="model.ecore#//Turn/context"/>
+  </nested>
+  <nested inputs="bundleentry://502.fwk1019765725/cache/www.w3.org/2001/XMLSchema.xsd#//boolean;XSDSimpleTypeDefinition=10"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Metacomm;XSDComplexTypeDefinition=12"
+      outputs="model.ecore#//Metacomm">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Metacomm;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//Metacomm/isHelp"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Metacomm;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//Metacomm/isCorrection"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//SystemMetacomm;XSDComplexTypeDefinition=11"
+      outputs="model.ecore#//SystemMetacomm">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SystemMetacomm;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//SystemMetacomm/isASRReject"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SystemMetacomm;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//SystemMetacomm/isDIVReject"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SystemMetacomm;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//SystemMetacomm/isGRReject"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//prompt_type_t;XSDSimpleTypeDefinition=7"
+      outputs="model.ecore#//PromptTypeT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//prompt_type_t;XSDSimpleTypeDefinition=7/XSDEnumerationFacet"
+        outputs="model.ecore#//PromptTypeT/OPEN"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//prompt_type_t;XSDSimpleTypeDefinition=7/XSDEnumerationFacet=1"
+        outputs="model.ecore#//PromptTypeT/HALFOPEN"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//prompt_type_t;XSDSimpleTypeDefinition=7/XSDEnumerationFacet=2"
+        outputs="model.ecore#//PromptTypeT/CLOSED"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//prompt_type_t;XSDSimpleTypeDefinition=7/XSDEnumerationFacet=3"
+        outputs="model.ecore#//PromptTypeT/NOQUESTION"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechOutput;XSDComplexTypeDefinition=10"
+      outputs="model.ecore#//SpeechOutput">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechOutput;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//SpeechOutput/aNCO"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechOutput;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//SpeechOutput/aNIN"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechOutput;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//SpeechOutput/aNPA"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechOutput;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//SpeechOutput/aNFA"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechOutput;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//SpeechOutput/promptType"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//SystemTurn;XSDComplexTypeDefinition=8"
+      outputs="model.ecore#//SystemTurn">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SystemTurn;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//SystemTurn/metacomm"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SystemTurn;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//SystemTurn/speechOutput"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SystemTurn;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//SystemTurn/cooperativity"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//UserMetacomm;XSDComplexTypeDefinition=13"
+      outputs="model.ecore#//UserMetacomm">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserMetacomm;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//UserMetacomm/isTimeOut"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserMetacomm;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//UserMetacomm/isCancel"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserMetacomm;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//UserMetacomm/isRestart"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserMetacomm;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//UserMetacomm/isBargein"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserMetacomm;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//UserMetacomm/isSuccessfulBargein"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//parsing_result_t;XSDSimpleTypeDefinition=8"
+      outputs="model.ecore#//ParsingResultT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//parsing_result_t;XSDSimpleTypeDefinition=8/XSDEnumerationFacet"
+        outputs="model.ecore#//ParsingResultT/CORRECTLYUNDERSTOOD"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//parsing_result_t;XSDSimpleTypeDefinition=8/XSDEnumerationFacet=1"
+        outputs="model.ecore#//ParsingResultT/PARTIALLYUNDERSTOOD"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//parsing_result_t;XSDSimpleTypeDefinition=8/XSDEnumerationFacet=2"
+        outputs="model.ecore#//ParsingResultT/NOTHINGUNDERSTOOD"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14"
+      outputs="model.ecore#//SpeechInput">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//SpeechInput/overallWords"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//SpeechInput/substitutedWords"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//SpeechInput/deletedWords"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//SpeechInput/insertedWords"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//SpeechInput/overallSentences"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="model.ecore#//SpeechInput/substitutedSentences"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="model.ecore#//SpeechInput/deletedSentences"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="model.ecore#//SpeechInput/insertedSentences"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="model.ecore#//SpeechInput/overallConcepts"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="model.ecore#//SpeechInput/substitutedConcepts"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="model.ecore#//SpeechInput/deletedConcepts"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="model.ecore#//SpeechInput/insertedConcepts"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=12"
+        outputs="model.ecore#//SpeechInput/parsingResult"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//GuiInput;XSDComplexTypeDefinition=15"
+      outputs="model.ecore#//GuiInput">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//GuiInput;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//GuiInput/textElements"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//GuiInput;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//GuiInput/navigationActions"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//GuiInput;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//GuiInput/navigationMoves"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//GuiInput;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//GuiInput/navigationLength"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//GuiInput;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//GuiInput/exploringActions"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//GuiInput;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="model.ecore#//GuiInput/transferringActions"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//UserTurn;XSDComplexTypeDefinition=16"
+      outputs="model.ecore#//UserTurn">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserTurn;XSDComplexTypeDefinition=16/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//UserTurn/metacomm"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserTurn;XSDComplexTypeDefinition=16/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//UserTurn/speechInput"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserTurn;XSDComplexTypeDefinition=16/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//UserTurn/guiInput"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//dialogue_step_t;XSDComplexTypeDefinition=17"
+      outputs="model.ecore#//DialogueStepT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//dialogue_step_t;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//DialogueStepT/systemTurn"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//dialogue_step_t;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//DialogueStepT/userTurn"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Dialogue;XSDComplexTypeDefinition=1"
+      outputs="model.ecore#//Dialogue">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Dialogue;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//Dialogue/baseTimestamp"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Dialogue;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//Dialogue/task"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Dialogue;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//Dialogue/step"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Dialogue;XSDElementDeclaration=13"
+      outputs="model.ecore#//DocumentRoot/dialogue"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//GuiInput;XSDElementDeclaration=12"
+      outputs="model.ecore#//DocumentRoot/guiInput"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityAppropriateness;XSDElementDeclaration=5"
+      outputs="model.ecore#//DocumentRoot/modalityAppropriateness"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityChange;XSDElementDeclaration=4"
+      outputs="model.ecore#//DocumentRoot/modalityChange"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//ModalityInfo;XSDElementDeclaration=6"
+      outputs="model.ecore#//DocumentRoot/modalityInfo"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//ModalitySynchroni;XSDElementDeclaration=3"
+      outputs="model.ecore#//DocumentRoot/modalitySynchroni"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechInput;XSDElementDeclaration=11"
+      outputs="model.ecore#//DocumentRoot/speechInput"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//SpeechOutput;XSDElementDeclaration=8"
+      outputs="model.ecore#//DocumentRoot/speechOutput"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//SystemMetacomm;XSDElementDeclaration=9"
+      outputs="model.ecore#//DocumentRoot/systemMetacomm"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Task;XSDElementDeclaration=1"
+      outputs="model.ecore#//DocumentRoot/task"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//likert5_value;XSDSimpleTypeDefinition=9"
+      outputs="model.ecore#//Likert5Value"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//UserAttitude;XSDComplexTypeDefinition=18"
+      outputs="model.ecore#//UserAttitude">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserAttitude;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//UserAttitude/usefulness"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserAttitude;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//UserAttitude/pleasantness"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserAttitude;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//UserAttitude/integration"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserAttitude;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//UserAttitude/selfEfficacy"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserAttitude;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//UserAttitude/comfort"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//UserData;XSDComplexTypeDefinition=20"
+      outputs="model.ecore#//UserData">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserData;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//UserData/userRatings"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserData;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//UserData/userMood"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserData;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//UserData/userAttitude"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserData;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="model.ecore#//UserData/age"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserData;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="model.ecore#//UserData/gender"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserData;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="model.ecore#//UserData/educationLevel"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//UserData;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="model.ecore#//UserData/previousExperience"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Trial;XSDComplexTypeDefinition=21"
+      outputs="model.ecore#//Trial">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Trial;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="model.ecore#//Trial/description"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Trial;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="model.ecore#//Trial/userData"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//Trial;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="model.ecore#//Trial/dialogues"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Trial;XSDElementDeclaration=14"
+      outputs="model.ecore#//DocumentRoot/trial"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Turn;XSDElementDeclaration=2"
+      outputs="model.ecore#//DocumentRoot/turn"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//UserMetacomm;XSDElementDeclaration=10"
+      outputs="model.ecore#//DocumentRoot/userMetacomm"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//Attitude;XSDComplexTypeDefinition=22"
+      outputs="model.ecore#//Attitude"/>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//education_level_t;XSDSimpleTypeDefinition=13"
+      outputs="model.ecore#//EducationLevelT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//education_level_t;XSDSimpleTypeDefinition=13/XSDEnumerationFacet"
+        outputs="model.ecore#//EducationLevelT/HIGHSCHOOL"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//education_level_t;XSDSimpleTypeDefinition=13/XSDEnumerationFacet=1"
+        outputs="model.ecore#//EducationLevelT/PROFESSIONAL"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//education_level_t;XSDSimpleTypeDefinition=13/XSDEnumerationFacet=2"
+        outputs="model.ecore#//EducationLevelT/COLLEGE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//education_level_t;XSDSimpleTypeDefinition=13/XSDEnumerationFacet=3"
+        outputs="model.ecore#//EducationLevelT/NOTAPPLICABLE"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//gender_t;XSDSimpleTypeDefinition=12"
+      outputs="model.ecore#//GenderT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//gender_t;XSDSimpleTypeDefinition=12/XSDEnumerationFacet"
+        outputs="model.ecore#//GenderT/MALE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//gender_t;XSDSimpleTypeDefinition=12/XSDEnumerationFacet=1"
+        outputs="model.ecore#//GenderT/FEMALE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//gender_t;XSDSimpleTypeDefinition=12/XSDEnumerationFacet=2"
+        outputs="model.ecore#//GenderT/OTHER"/>
+  </nested>
+  <nested inputs="../../carimModel.design/carimModel.xsd#//previous_experience_t;XSDSimpleTypeDefinition=14"
+      outputs="model.ecore#//PreviousExperienceT">
+    <nested inputs="../../carimModel.design/carimModel.xsd#//previous_experience_t;XSDSimpleTypeDefinition=14/XSDEnumerationFacet"
+        outputs="model.ecore#//PreviousExperienceT/NONE"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//previous_experience_t;XSDSimpleTypeDefinition=14/XSDEnumerationFacet=1"
+        outputs="model.ecore#//PreviousExperienceT/LOW"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//previous_experience_t;XSDSimpleTypeDefinition=14/XSDEnumerationFacet=2"
+        outputs="model.ecore#//PreviousExperienceT/MEDIUM"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//previous_experience_t;XSDSimpleTypeDefinition=14/XSDEnumerationFacet=3"
+        outputs="model.ecore#//PreviousExperienceT/HIGH"/>
+    <nested inputs="../../carimModel.design/carimModel.xsd#//previous_experience_t;XSDSimpleTypeDefinition=14/XSDEnumerationFacet=4"
+        outputs="model.ecore#//PreviousExperienceT/EXPERT"/>
+  </nested>
+</xsd2ecore:XSD2EcoreMappingRoot>

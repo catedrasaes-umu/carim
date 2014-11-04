@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="/instantiator.mmiEvents.emf"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/pedro/svn_catedra/anotaciones/context_aware_interaction/implementation/instantiator/mmiUtils/log4j-1.2.16.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/carimModel.emf"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/instantiator.mmiUtils"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

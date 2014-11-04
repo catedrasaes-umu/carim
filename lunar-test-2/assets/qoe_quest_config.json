@@ -1,0 +1,152 @@
+{
+	    "n_questions": "16",
+	    "n_total_questions": "16",
+	    "questions": [
+	    
+	    	// All Question options:
+	    	// 
+	        // {
+	        // "q_value": "value_name",            // (man) the name
+	        // "q_default": "a_value",             // (opt) the default value
+	        // "q_type": "one type from below",    // (man) how the value is extracted
+	        //           - q_type_ignore: the value will be ignored  
+	        //           - q_type_auto: the value will be extracted somehow later  
+	        //           - q_type_options: a question displaying several options
+	        //           - q_type_likert5: a 5-item likert scale based on two antonyms
+	        //           - q_type_likert7: a 7-item likert scale based on two antonyms
+	        //           - q_type_integer: an integer question from opt1 to opt2
+	        // "q_wording": "Question wording???", // (opt) the question wording
+	        // "q_options": "opt1, opt2, opt3",    // (opt) the question options
+	        // "q_result": "aValue"                // (opt) the place for the returned value
+	        // },
+	        
+	        //
+	    	// user mood
+	    	//
+	    	
+	        {
+	        "q_value": "mood",
+	        "q_type": "q_type_options",
+	        "q_wording": "How do you feel right now?/¿Cómo te sientes ahora mismo?",
+	        "q_options": "very sad/muy triste, sad/triste, normal, happy/feliz, very happy/muy feliz"
+	        },
+	        
+	        //
+	    	// user attitude
+	    	//
+	    	
+	        {
+	        "q_value": "att1",
+	        "q_type": "q_type_likert5",
+	        "q_wording": "Using technology makes me more productive/Usar la tecnología me hace más productivo",
+	        "q_options": "Strongly disagree/Muy en desacuerdo, Strongly agree/Muy de acuerdo"
+	        },
+	    	
+	        {
+	        "q_value": "att2",
+	        "q_type": "q_type_likert5",
+	        "q_wording": "Using technology makes your daily life more pleasant/Usar la tecnología hace mi vida más agradable",
+	        "q_options": "Strongly disagree/Muy en desacuerdo, Strongly agree/Muy de acuerdo"
+	        },
+	    	
+	        {
+	        "q_value": "att3",
+	        "q_type": "q_type_likert5",
+	        "q_wording": "Integrating technology into your daily life is not difficult for you/Me resulta sencillo integrar la tecnología en mi vida diaria",
+	        "q_options": "Strongly disagree/Muy en desacuerdo, Strongly agree/Muy de acuerdo"
+	        },
+	    	
+	        {
+	        "q_value": "att4",
+	        "q_type": "q_type_likert5",
+	        "q_wording": "You are not hesitant to use computers without help of an expert/No tengo reparo en usar la tecnología sin la ayuda de alguien",
+	        "q_options": "Strongly disagree/Muy en desacuerdo, Strongly agree/Muy de acuerdo"
+	        },
+	    	
+	        {
+	        "q_value": "att5",
+	        "q_type": "q_type_likert5",
+	        "q_wording": "You are comfortable using technology for work and daily tasks/Me siento cómodo usando la tecnología en mi trabajo y vida diaria",
+	        "q_options": "Strongly disagree/Muy en desacuerdo, Strongly agree/Muy de acuerdo"
+	        },
+	        
+	        //
+	    	// QoE
+	    	//
+	    	
+	        {
+	        "q_value": "qoe1",
+	        "q_type": "q_type_likert7",
+	        "q_wording": "Please, rate how practical the app you tested is/¿Te parece práctica la app?",
+	        "q_options": "impractical/impráctica, practical/práctica"
+	        },
+	    	
+	        {
+	        "q_value": "qoe2",
+	        "q_type": "q_type_likert7",
+	        "q_wording": "Please, rate how predictable the app you tested is/¿Te parece predecible?",
+	        "q_options": "unpredictable/impredecible, predictable/predecible"
+	        },
+	    	
+	        {
+	        "q_value": "qoe3",
+	        "q_type": "q_type_likert7",
+	        "q_wording": "Please, rate how structured the app you tested is/¿Te parece estructurada?",
+	        "q_options": "confusing/confusa, clearly structured/bien estructurada"
+	        },
+	    	
+	        {
+	        "q_value": "qoe4",
+	        "q_type": "q_type_likert7",
+	        "q_wording": "Please, rate how simple to use the app you tested is/¿Te parece simple de usar?",
+	        "q_options": "complicated/complicada, simple"
+	        },
+	        
+	        ///
+	        
+	        {
+	        "q_value": "qoe5",
+	        "q_type": "q_type_likert7",
+	        "q_wording": "Please, rate how stylish the app you tested is/¿Te parece estilosa?",
+	        "q_options": "tacky/hortera, stylish/estilosa"
+	        },
+	        
+	        {
+	        "q_value": "qoe6",
+	        "q_type": "q_type_likert7",
+	        "q_wording": "Please, rate how premium the app you tested is/¿Te parece premium?",
+	        "q_options": "cheap/baratera, premium"
+	        },
+	        
+	        {
+	        "q_value": "qoe7",
+	        "q_type": "q_type_likert7",
+	        "q_wording": "Please, rate how creative the app you tested is/¿Te parece creativa?",
+	        "q_options": "unimaginative/simple, creative/creativa"
+	        },
+	        
+	        {
+	        "q_value": "qoe8",
+	        "q_type": "q_type_likert7",
+	        "q_wording": "Please, rate how captivating the app you tested is/¿Te parece interesante?",
+	        "q_options": "dull/aburrida, captivating/fascinante"
+	        },
+	        
+	        ///
+	        
+	        {
+	        "q_value": "qoe9",
+	        "q_type": "q_type_likert7",
+	        "q_wording": "Please, rate how beautiful the app you tested is/¿Te parece atractiva?",
+	        "q_options": "ugly/fea, beautiful/preciosa"
+	        },
+	        
+	        {
+	        "q_value": "qoe10",
+	        "q_type": "q_type_likert7",
+	        "q_wording": "Please, rate how good the app you tested is/¿Te parece buena?",
+	        "q_options": "bad/mala, good/buena"
+	        }
+	        
+	    ]
+}
